@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autofill</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <form>
+      <h1 class="title">Autofill</h1>
+      <h2 class="subtitle">Informations</h2>
+      <h3>Adresse</h3>
+      <div class="col_form">
+        <input type="text" class="input" placeholder="nom" id="nom" />
+        <input type="email" class="input" placeholder="mail" id="mail" />
+        <input type="tel" class="input" placeholder="tel" id="tel" />
+        <input type="text" class="input" placeholder="adresse" id="adresse" />
+      </div>
+      <div class="row_form">
+        <input type="text" placeholder="ville" id="ville" />
+        <input type="text" placeholder="CP" id="cp" />
+      </div>
+
+      <h3>Carte bancaire</h3>
+      <input type="text" class="input" placeholder="num" id="num" />
+      <div class="row_form">
+        <input type="text" placeholder="m" id="m" />
+        <input type="text" placeholder="y" id="y" />
+        <input type="text" placeholder="cvv" id="cvv" />
+      </div>
+      <button id="submit"><a href="popup.html">OK</a></button>
+    </form>
+    <script src="save.js"></script>
+  </body>
+</html>

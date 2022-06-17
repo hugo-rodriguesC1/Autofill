@@ -1,0 +1,89 @@
+body {
+    width: 500px;
+    min-height: 550px;
+    background-color: #262626;
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.title {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 120px;
+    margin-left: 120px;
+    justify-content: space-between;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: #fff;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.input {
+    width: 50vw;
+    background-color: transparent;
+    border: #fff;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+form {
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+.row_form {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5vw ;
+}
+.row_form input{
+    width: 15vw;
+    background-color: transparent;
+    border: #fff;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+button {
+    background-color: transparent;
+    padding: 5px;
+    border: #fff solid 1px;
+    color: white;
+    width: 80px;
+}
+
+input::placeholder {
+    color: lightgray;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
