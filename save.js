@@ -22,6 +22,10 @@ chrome.storage.local.get("Cp", function (data) {
   let Cp = data.Cp;
   document.getElementById("cp").value = Cp;
 });
+chrome.storage.local.get("Pays", function (data) {
+  let Pays = data.Pays;
+  document.getElementById("pays").value = Pays;
+});
 chrome.storage.local.get("Num", function (data) {
   let Num = data.Num;
   document.getElementById("num").value = Num;
@@ -50,6 +54,7 @@ function saveData() {
   let adresse = document.getElementById("adresse").value;
   let ville = document.getElementById("ville").value;
   let cp = document.getElementById("cp").value;
+  let pays = document.getElementById("pays").value;
   let num = document.getElementById("num").value;
   let m = document.getElementById("m").value;
   let y = document.getElementById("y").value;
@@ -61,6 +66,7 @@ function saveData() {
   chrome.storage.local.set({ Adresse: adresse });
   chrome.storage.local.set({ Ville: ville });
   chrome.storage.local.set({ Cp: cp });
+  chrome.storage.local.set({ Pays: pays });
   chrome.storage.local.set({ Num: num });
   chrome.storage.local.set({ M: m });
   chrome.storage.local.set({ Y: y });
