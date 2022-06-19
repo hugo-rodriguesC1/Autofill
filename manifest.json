@@ -18,6 +18,10 @@
         {
             "matches": ["https://www.supremenewyork.com/checkout"],
             "js": ["script.js"]
+        },
+        {
+            "matches": ["https://www.supremenewyork.com/shop/*"],
+            "js": ["atc.js"]
         }
     ]
         

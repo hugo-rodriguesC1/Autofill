@@ -42,6 +42,10 @@ chrome.storage.local.get("Cvv", function (data) {
   let Cvv = data.Cvv;
   document.getElementById("cvv").value = Cvv;
 });
+chrome.storage.local.get("ClothingSize", function (data) {
+  let ClothingSize = data.ClothingSize;
+  document.getElementById("clothingSize").value = ClothingSize;
+});
 
 document.getElementById("submit").addEventListener("click", function () {
   saveData();
@@ -59,6 +63,7 @@ function saveData() {
   let m = document.getElementById("m").value;
   let y = document.getElementById("y").value;
   let cvv = document.getElementById("cvv").value;
+  let clothingSize = document.getElementById("clothingSize").value;
 
   chrome.storage.local.set({ Nom: nom });
   chrome.storage.local.set({ Mail: mail });
@@ -71,4 +76,5 @@ function saveData() {
   chrome.storage.local.set({ M: m });
   chrome.storage.local.set({ Y: y });
   chrome.storage.local.set({ Cvv: cvv });
+  chrome.storage.local.set({ ClothingSize: clothingSize });
 }

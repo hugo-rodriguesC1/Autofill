@@ -7,6 +7,8 @@ body {
     font-size: 14px;
     font-weight: normal;
     margin: 0;
+
+    
 }
 
 .title {
@@ -41,7 +43,7 @@ body {
 }
 
 .input {
-    width: 50vw;
+    width: 100%;
     background-color: transparent;
     border: #fff;
     border-style: solid;
@@ -51,18 +53,19 @@ body {
 }
 
 form {
-    margin-right: 120px;
-    margin-left: 120px;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .row_form {
-    width: 50vw;
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
-    gap: 1.5vw ;
+    gap: 8px;
 }
+
 .row_form input{
-    width: 15vw;
+    width: 100%;
     background-color: transparent;
     border: #fff;
     border-style: solid;
@@ -77,6 +80,7 @@ button {
     border: #fff solid 1px;
     color: white;
     width: 80px;
+    margin-bottom: 50px;
 }
 
 input::placeholder {
@@ -91,3 +95,23 @@ a {
 option {
     color: darkslategrey;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #262626;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
