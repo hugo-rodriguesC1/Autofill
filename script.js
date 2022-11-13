@@ -15,7 +15,7 @@ chrome.storage.local.get("autofillChecked", function (data) {
   let autofillCheck = data.autofillChecked;
   if (autofillCheck == true) {
     getData();
-    setTimeout(autofill, 0.0001);
+    setTimeout(autofill, 0.5);
   }
 });
 chrome.storage.local.get("checkoutChecked", function (data) {
