@@ -15,13 +15,13 @@ chrome.storage.local.get("autofillChecked", function (data) {
   let autofillCheck = data.autofillChecked;
   if (autofillCheck == true) {
     getData();
-    setTimeout(autofill, 0.5);
+    setTimeout(autofill, 50);
   }
 });
 chrome.storage.local.get("checkoutChecked", function (data) {
   let checkoutCheck = data.checkoutChecked;
   if (checkoutCheck == true) {
-    if (!checkoutControl) setTimeout(checkout, 50);
+    if (!checkoutControl) setTimeout(checkout, 100);
   }
 });
 
